@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Roboto', sans-serif;
+
+}
+.heroSection{
+    background-color: black;
+    position: relative;
+    width:100%;
+    height:calc(90vh - 60px);
+}
+.heroSection>h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 50px;
+    text-align: center;
+}
+section{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    height: 60px;
+    width: 100%;
+    padding: 0rem 2rem;
+    align-items: center;
+    z-index: 999;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+.navLinks{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap:1rem
+}
+.navLinks>li>a{
+    cursor: pointer;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.svgBtm{
+    position: absolute;
+    bottom: 0;
+}
+.about{
+    padding: 0rem 2rem;
+    position: relative;
+    
+}
+
+.about>h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+.aboutInfo{
+    display: flex;
+    gap: 3rem;
+}
+.aboutInfo img{
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.aboutInfo>p{
+    font-size: 29px;
+    color: rgb(85, 85, 85);
+}
+.bio{
+    padding: 0rem 2rem;
+    position: relative;
+}
+.bio>h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+.bio>p{
+    font-size: 29px;
+    color: rgb(85, 85, 85);
+    
+}
+.openMenu{
+    display: none;
+    cursor: pointer;
+}
+.line{
+    width: 34px;
+    background-color:black;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    
+}
+.closeMenu{
+    font-size: 20px;
+    display: none;
+    color: rgb(80, 79, 79);
+    cursor: pointer;
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+   .openMenu{
+    display: block;
+   }
+   .heroSection{
+    height: calc(60vh - 60px);
+   }
+   .heroSection>h1{
+    font-size: 35px;
+   }
+   .navLinks{
+    display: none;
+    
+    
+    position: absolute;
+   
+    background-color:rgb(240, 236, 236);
+    color: black;
+    font-size: 17px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 30vh;
+    padding: 1.5rem 0rem 0rem 1rem;
+   }
+   .navLinks li{
+    margin-bottom: 11px;
+   }
+   .navLinks li:hover{
+text-decoration: underline;
+
+   }
+   .closeMenu{
+    position: absolute;
+    display: none;
+    top: 13px;
+    right: 0;
+    padding-right: 15px;
+   }
+   .aboutInfo{
+    display: flex;
+    gap: 1rem;
+
+    
+   }
+   .aboutInfo>img{
+    height: 120px;
+   }
+   .aboutInfo>p{
+    font-size: 15px;
+   }
+  .bio>p{
+    font-size: 16px;
+  }
+}
